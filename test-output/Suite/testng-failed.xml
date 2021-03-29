@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Login_TestCase(failed)">
+    <classes>
+      <class name="com.srd.stepdefinition.login_page_test_cases">
+        <methods>
+          <include name="browser"/>
+        </methods>
+      </class> <!-- com.srd.stepdefinition.login_page_test_cases -->
+    </classes>
+  </test> <!-- Login_TestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->

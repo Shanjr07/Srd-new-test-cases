@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SRDlogistics]">
+  <parameter name="error_message" value="Incorrect Username or Password, please check login credential and try again."/>
+  <parameter name="password" value="4646"/>
+  <parameter name="Username" value="iqbal"/>
+  <parameter name="invalid_password" value="xxxx"/>
+  <parameter name="dashboard_url" value="http://qa.appsrdlogistics.com/dashboard/classic"/>
+  <parameter name="Url" value="http://qa.appsrdlogistics.com/"/>
+  <listeners>
+    <listener class-name="com.srd.listner.emailreport"/>
+    <listener class-name="com.srd.listner.screenshot"/>
+  </listeners>
+  <test name="Login_TestCase(failed)">
+    <classes>
+      <class name="com.srd.stepdefinition.login_page_test_cases">
+        <methods>
+          <include name="browser"/>
+          <include name="login_with_correct__username_password" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.srd.stepdefinition.login_page_test_cases -->
+    </classes>
+  </test> <!-- Login_TestCase(failed) -->
+</suite> <!-- Failed suite [SRDlogistics] -->
